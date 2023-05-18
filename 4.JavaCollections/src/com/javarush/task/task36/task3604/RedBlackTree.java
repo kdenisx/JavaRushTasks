@@ -37,7 +37,7 @@ public class RedBlackTree {
             parent = current;
             current = item > current.element ? current.right : current.left;
 
-            if (current.left.color == Color.RED && current.right.color == Color.BLACK) {
+            if (current.left.color == Color.RED && current.right.color == Color.RED) {
                 reorient(item);
             }
         }
